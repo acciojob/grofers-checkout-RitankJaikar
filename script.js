@@ -9,9 +9,8 @@ const getSum = () => {
 	allPrice.forEach(price => {
 		sum+=parseInt(price.innerText);
 	})
-	const total = document.createElement("div");
-	total.innerText= sum;
-	document.body.appendChild(total);
+	const ans = document.querySelector("#ans");
+	ans.innerText= sum;
 };
 
 getSumBtn.addEventListener("click", getSum);
